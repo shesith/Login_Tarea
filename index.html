@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Gabriela&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Gabriela&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://adilene.net/webring/alternate/miku.css"
+    />
+
+    <style type="text/css">
+      img {
+        width: 180px;
+        height: 180px;
+      }
+    </style>
+
+    <title>Login practico y funcional</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <img src="gifAnime.gif" alt="Responsive image" />
+        <br />
+        <br />
+        <h2>Formulario para inicio</h2>
+        <h2>de sesión.</h2>
+        <form id="login-form" class="container-form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Ingresar Email"
+            class="my-2 input__email"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Ingresar Contraseña"
+            class="input__pass my-3"
+          />
+          <button class="button-30" type="submit">Enviar</button>
+        </form>
+        <br />
+        <a href="register-user.html" style="color: #d34f77" class="mt-3"
+          >Registrarse</a
+        >
+        <div id="response">
+          <!-- Este div es para desplegar las respuestas que envie el servidor -->
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
