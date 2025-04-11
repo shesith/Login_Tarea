@@ -6,7 +6,7 @@
   font-style: normal; /* O italic si es una fuente cursiva */
 }
 body {
-  background-image: url("fondo2.svg"); /* Reemplaza con la ruta correcta de tu imagen */
+  background-image: url("fondo.png"); /* Reemplaza con la ruta correcta de tu imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-size: cover; /* Escala la imagen para cubrir todo el fondo */
   background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
