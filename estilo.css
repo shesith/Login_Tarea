@@ -1,116 +1,179 @@
-/* Estilos generales */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #FFB6C1, #FFC0CB);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  margin: 0;
+  font-family: "VT323", monospace;
+  background-image: url("ww.jpg"); /* tu imagen de fondo */
+  background-size: cover; /* que cubra toda la pantalla */
+  background-repeat: no-repeat; /* que no se repita */
+  background-position: center; /* centrado */
+  background-attachment: fixed; /* que no se mueva al hacer scroll */
+  color: #222;
+  position: relative;
+  z-index: 1;
 }
 
-/* Encabezado */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 192, 203, 0.2); /* rosado claro con transparencia */
+  pointer-events: none;
+  z-index: 0;
+}
+
 header {
-    width: 100%;
-    background-color: #FF69B4;
-    padding: 20px;
-    text-align: center;
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-header h1 {
-    margin: 0;
-    font-size: 36px;
-    letter-spacing: 2px;
+  background-color: #ff8cb2;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.8em;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  border-bottom: 4px dashed #fff0f5;
 }
 
-/* Barra de navegación */
 nav {
-    width: 100%;
-    background-color: #FFB6C1;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  background-color: #fcd5ce;
+  padding: 12px 0;
+  flex-wrap: wrap;
+  border-bottom: 2px dotted #ffc1d3;
+  box-shadow: inset 0 -5px 10px rgba(255, 200, 230, 0.3);
 }
+
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
+  color: #7f2b53;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 1.3em;
+  transition: all 0.3s ease;
+  position: relative;
 }
+
 nav a:hover {
-    color: #FF69B4;
+  background-color: #f4a4c7;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 10px #ffb8d2;
 }
 
-/* Estilo específico para el botón "Iniciar Sesión" */
+nav a::after {
+  content: "🍓";
+  position: absolute;
+  right: -15px;
+  top: 0;
+  font-size: 1em;
+  opacity: 0.7;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+  transform: rotate(15deg) scale(1.2);
+}
+
 .login-btn {
-    background-color: #FF69B4;
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    text-align: center;
+  background-color: #ff8cb2;
+  color: white !important;
+  border-radius: 20px;
+  margin-left: auto;
 }
 
-.login-btn:hover {
-    background-color: #FF1493;
-    cursor: pointer;
-}
-
-/* Área de contenido */
 .content {
-    max-width: 1200px;
-    width: 100%;
-    margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
+  background: #fff0f6;
+  border: 3px dashed #ffcce0;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 170, 200, 0.2);
+  width: 350px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
 .card:hover {
-    transform: scale(1.05);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 160, 200, 0.3);
+}
+
+.card::before {
+  content: "💖";
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 2em;
 }
 
 .card h2 {
-    margin: 0 0 10px;
-    color: #FF69B4;
+  color: #d34f77;
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
 .card p {
-    color: #333;
+  font-size: 1.2em;
+  color: #555;
 }
 
-/* Botones */
 .btn {
-    background-color: #FF69B4;
-    padding: 10px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    margin-top: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #d34f77;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-    background-color: #FF1493;
+  background-color: #b2325a;
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+}
+.sparkle {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #fff7fb 0%, #ffccf9 40%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 8s linear infinite;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.2);
+    opacity: 0;
+  }
 }

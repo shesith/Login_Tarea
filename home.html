@@ -1,45 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choripan.exe</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choripan.exe 💻🌸</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Choripan</h1>
+      <h1>🌟 Girls Show Animes! 🌟</h1>
     </header>
 
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
-        <a href="#" class="login-btn">Iniciar Sesión</a>
+      <a href="#">🏠 Inicio</a>
+      <a href="#">👩‍💻 Nosotros</a>
+      <a href="#">💫 Servicios</a>
+      <a href="#">📬 Contacto</a>
+      <a href="#" class="login-btn">💖 Iniciar Sesión</a>
     </nav>
 
     <div class="content">
-        <div class="card">
-            <h2>Título Card 1</h2>
-            <p>Descripción del contenido para la primera card.</p>
-            <a href="#" class="btn">Leer más</a>
-        </div>
-        <div class="card">
-            <h2>Título Card 2</h2>
-            <p>Descripción del contenido para la segunda card.</p>
-            <a href="#" class="btn">Leer más</a>
-        </div>
-        <div class="card">
-            <h2>Título Card 3</h2>
-            <p>Descripción del contenido para la tercera card.</p>
-            <a href="#" class="btn">Leer más</a>
-        </div>
+      <div class="card">
+        <img src="Devil_May_Cry.jpg" alt="Devil May Cry" class="card-img" />
+        <h2>😈 Devil May Cry</h2>
+        <p>
+          Este anime, que es uno de los más esperados del año, sigue al cazador
+          de demonios a sueldo Dante en su intento de frustrar una invasión
+          demoníaca de la Tierra encabezada por un poderoso demonio conocido
+          como el Conejo Blanco, al tiempo que entra en conflicto con una
+          soldado, Mary.
+        </p>
+        <a href="#" class="btn">👁 Leer más</a>
+      </div>
+      <div class="card">
+        <img src="Yamada_kun_to_lv999.jpg" alt="Yamada-kun" class="card-img" />
+        <h2>🎮 Yamada-kun to Lv999</h2>
+        <p>
+          Después de que su novio la deja por otra chica, Akane Kinoshita decide
+          que va a hacer que se arrepienta de su decisión. Sin embargo,
+          inesperadamente, conoce a un jugador socialmente torpe que podría
+          resolver todos sus problemas.
+        </p>
+        <a href="#" class="btn">👁 Leer más</a>
+      </div>
+      <div class="card">
+        <img
+          src="Kimi_no_Koto_ga_Dai_Dai_Dai_Dai_Daisuki_na_100_nin_no_Kanojo.jpg"
+          alt="100 Novias"
+          class="card-img"
+        />
+        <h2>
+          💘 Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo (Mis
+          100 novias que me quieren mucho mucho)
+        </h2>
+        <p>
+          La historia se centra en Rentarō Aijō, quien se enamoró y confesó a
+          100 chicas... ¡y fue rechazado por todas! Pero el Dios del Amor le
+          revela que está destinado a tener 100 almas gemelas. ¿Podrá con tanto
+          amor?
+        </p>
+        <a href="#" class="btn">👁 Leer más</a>
+      </div>
+      <div class="card">
+        <img src="os.jpg" alt="Oshi No Ko" class="card-img" />
+        <h2>⭐ Oshi No Ko</h2>
+        <p>
+          La trama sigue a un médico y su paciente recientemente fallecidos que
+          renacieron como gemelos de una famosa idol de pop japonés, los cuales
+          navegan por los altibajos de la industria del entretenimiento del país
+          a medida que crecen juntos a lo largo de sus vidas.
+        </p>
+        <a href="#" class="btn">👁 Leer más</a>
+      </div>
     </div>
-    
+    <script>
+      const numSparkles = 25;
 
-</body>
+      for (let i = 0; i < numSparkles; i++) {
+        const sparkle = document.createElement("div");
+        sparkle.classList.add("sparkle");
+        sparkle.style.left = Math.random() * 100 + "vw";
+        sparkle.style.animationDuration = 5 + Math.random() * 5 + "s";
+        sparkle.style.animationDelay = Math.random() * 10 + "s";
+        document.body.appendChild(sparkle);
+      }
+    </script>
+  </body>
 </html>
-
-
