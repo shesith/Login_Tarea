@@ -29,7 +29,6 @@ form.addEventListener("submit", function (event) {
   } else {
     borderedBox(1, 0);
   }
-  console.log(response.text());
 
   //Validamos la confirmación de la contraseña
   if (emptyInput(userData.get("confirmPassword"))) {
